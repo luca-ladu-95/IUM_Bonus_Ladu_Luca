@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrazione"
+    android:background="#000000"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrazione"
+                android:textColor="#FAF6F6"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/regInputUser"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:background="#495361"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/regiInputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#495361"
+                android:textColor="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/regInputNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#495361"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cognome"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/regInputCognome"
+                android:layout_width="match_parent"
+                android:background="#495361"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Città"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/regInputCitta"
+                android:layout_width="match_parent"
+                android:background="#495361"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data di nascita"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#495361"
+                android:focusableInTouchMode="false"
+                android:id="@+id/reginputData"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:inputType="date"
+                android:hint="es. 01/01/1995" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/registatiButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="#009900"
+                    android:text="Registrati"
+                    android:textAlignment="center"
+                    android:textColor="#F5EDED"
+                    android:textSize="36dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
