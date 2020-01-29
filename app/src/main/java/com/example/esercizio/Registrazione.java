@@ -17,7 +17,7 @@ import static com.example.esercizio.Login.utenti;
 
 public class Registrazione extends AppCompatActivity {
 
-    EditText nome, cognome, username, password, citta, data;
+    EditText nome, cognome, username, password, citta, data,confermaP;
     Button conferma;
     Persona person;
     public static final String PERSON_EXTRA4 = "package com.example.esercizio";
@@ -42,6 +42,7 @@ public class Registrazione extends AppCompatActivity {
         username = findViewById(R.id.regInputUser);
         password = findViewById(R.id.regiInputPassword);
         citta = findViewById(R.id.regInputCitta);
+        confermaP=findViewById(R.id.regiConfInputPassword);
 
         conferma = findViewById(R.id.registatiButton);
 
@@ -122,6 +123,14 @@ public class Registrazione extends AppCompatActivity {
             cognome.setError(null);
 
 
+
+
+
+
+
+
+
+
         if (username.getText() == null || username.getText().toString().isEmpty()) {
             username.setError("Inserisci lo username");
             flag = false;
@@ -134,6 +143,14 @@ public class Registrazione extends AppCompatActivity {
                 username.setError(null);
 
         }
+
+
+        if (confermaP.getText() == null || confermaP.getText().toString().isEmpty()|| !(confermaP.getText().toString().equals(password.getText().toString()))) {
+            confermaP.setError("Le password non corrsipondono");
+            flag = false;
+        } else
+            confermaP.setError(null);
+
 
 
         if (password.getText() == null || password.getText().toString().isEmpty()) {
